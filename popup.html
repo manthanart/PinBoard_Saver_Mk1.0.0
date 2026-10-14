@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PinBoard Saver</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<header>
+  <div class="brandmark">P</div>
+  <div><div class="brand">PinBoard Saver</div><div class="sub">Pinterest collection tools</div></div>
+  <span class="status-dot"></span>
+</header>
+<main>
+  <section class="intro">
+    <div class="eyebrow">CURRENT PAGE</div>
+    <h1 id="pageTitle">Finding pins…</h1>
+    <p id="pageMeta">Open a Pinterest board or pin page.</p>
+  </section>
+  <div class="stats">
+    <div><strong id="totalCount">0</strong><span>Found</span></div>
+    <div><strong id="selectedCount">0</strong><span>Selected</span></div>
+  </div>
+  <div class="toolbar">
+    <button id="refreshBtn" class="button secondary">Refresh</button>
+    <button id="autoLoadBtn" class="button primary">Auto-load board</button>
+    <button id="selectAllBtn" class="button secondary">Select all</button>
+  </div>
+  <section class="preview-head"><h2>Media preview</h2><span id="selectionLabel">0 selected</span></section>
+  <div id="mediaGrid" class="media-grid"><div class="empty">Loading visible pins…</div></div>
+  <div class="exports">
+    <button id="zipBtn" class="button primary">Export ZIP</button>
+    <button id="pdfBtn" class="button secondary">Export PDF</button>
+  </div>
+  <div class="hint" id="hint">Scroll the Pinterest board to load more pins, then press Refresh.</div>
+  <footer>Personal-use utility · Media stays on your device</footer>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.pbs-positioned { position: relative !important; }
+.pbs-hover-download, .pbs-hover-select {
+  position: absolute !important; z-index: 2147483647 !important; top: 8px !important;
+  border: 0 !important; border-radius: 999px !important; color: #fff !important;
+  background: #222 !important; font: 600 12px/1.2 Arial,sans-serif !important;
+  padding: 9px 12px !important; cursor: pointer !important; opacity: 0;
+  box-shadow: 0 3px 12px #0003 !important;
+}
+.pbs-hover-download { right: 8px !important; }
+.pbs-hover-select { right: 76px !important; padding: 9px 11px !important; }
+.pbs-positioned:hover > .pbs-hover-download, .pbs-positioned:hover > .pbs-hover-select { opacity: 1; }
+.pbs-hover-select.pbs-selected { background: #b51f39 !important; }
+.pbs-hover-download:hover, .pbs-hover-select:hover { transform: translateY(-1px); }
